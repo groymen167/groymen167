@@ -193,7 +193,7 @@ frameTitle.Size = UDim2.new(1, 0, 1, 0)
 frameTitle.Position = UDim2.new(0, 0, 0, 0)
 frameTitle.BackgroundTransparency = 1
 frameTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
-frameTitle.Text = "Cheat Menu"
+frameTitle.Text = "groy cheat"
 frameTitle.Font = Enum.Font.SourceSansBold
 frameTitle.TextSize = 18
 frameTitle.Parent = frameHeader
@@ -270,30 +270,30 @@ end)
 return button
 end
 
-local toggleHighlightButton = createStyledButton("Enable Highlights", UDim2.new(0, 20, 0, 40))
+local toggleHighlightButton = createStyledButton("Включить ВХ", UDim2.new(0, 20, 0, 40))
 toggleHighlightButton.MouseButton1Click:Connect(function()
 highlightEnabled = not highlightEnabled
 obfuscatedToggleHighlights(highlightEnabled)
-toggleHighlightButton.Text = highlightEnabled and "Disable Highlights" or "Enable Highlights"
+toggleHighlightButton.Text = highlightEnabled and "Выключить ВХ" or "Включить ВХ"
 end)
 local toggleNoclipButton = createStyledButton("Enable Noclip", UDim2.new(0, 20, 0, 100))
 toggleNoclipButton.MouseButton1Click:Connect(function()
 noclipEnabled = not noclipEnabled
 obfuscatedToggleNoclip(noclipEnabled)
-toggleNoclipButton.Text = noclipEnabled and "Disable Noclip" or "Enable Noclip"
+toggleNoclipButton.Text = noclipEnabled and "Выключить Noclip" or "Включить Noclip"
 end)
 
-local toggleInfiniteJumpButton = createStyledButton("Enable Infinite Jump", UDim2.new(0, 20, 0, 160))
+local toggleInfiniteJumpButton = createStyledButton("Включить Infinite Jump", UDim2.new(0, 20, 0, 160))
 toggleInfiniteJumpButton.MouseButton1Click:Connect(function()
 infiniteJumpEnabled = not infiniteJumpEnabled
-toggleInfiniteJumpButton.Text = infiniteJumpEnabled and "Disable Infinite Jump" or "Enable Infinite Jump"
+toggleInfiniteJumpButton.Text = infiniteJumpEnabled and "Выключить Infinite Jump" or "Включить Infinite Jump"
 end)
 
-local toggleFlyButton = createStyledButton("Enable Fly", UDim2.new(0, 20, 0, 220))
+local toggleFlyButton = createStyledButton("Включить Fly", UDim2.new(0, 20, 0, 220))
 toggleFlyButton.MouseButton1Click:Connect(function()
 flyEnabled = not flyEnabled
 obfuscatedToggleFly(flyEnabled)
-toggleFlyButton.Text = flyEnabled and "Disable Fly" or "Enable Fly"
+toggleFlyButton.Text = flyEnabled and "Выключить Fly" or "Включить Fly"
 end)
 
 local function toggleMenuVisibility()
